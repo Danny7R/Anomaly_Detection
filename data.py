@@ -10,7 +10,7 @@ def load_data_3(leak_size=2, inx='all', m=19, d=1):
     if leak_size not in [2, 5, 30, '*']:
         raise Exception('leak_size should be 2, 5, 30, or "*" for all leaks. Passed value was:{}'.format(leak_size))
 
-    files = sorted(glob.glob(os.path.join('data/comp_gen/', ('*_' + str(leak_size) + '_LK*.txt'))))
+    files = sorted(glob.glob(os.path.join('data/', ('*_' + str(leak_size) + '_LK*.txt'))))
 
     if inx != 'all':
         files = files[inx]
