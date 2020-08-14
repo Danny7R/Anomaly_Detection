@@ -16,4 +16,3 @@ def multi_delay_embed(ds, m, d):
     x = total[:, :-1, :]
     y = total[:, -1, :]
     return x, y
-# 
